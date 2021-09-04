@@ -428,7 +428,7 @@ a.icon {
 .header-one {
   background: url('../images/logo5.png') no-repeat;
   height: 60vh !important;
-  min-height: 550px;
+  min-height: 520px;
   padding-top: 150px !important;
 }
 .header-two {
