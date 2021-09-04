@@ -426,9 +426,9 @@ a.icon {
 }
 
 .header-one {
-  background: url('../images/logo2crop.png') no-repeat;
+  background: url('../images/logo2.png') no-repeat;
   height: 60vh !important;
-  min-height: 520px;
+  min-height: 550px;
   padding-top: 150px !important;
 }
 .header-two {
