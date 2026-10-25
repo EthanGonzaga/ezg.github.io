@@ -213,6 +213,29 @@
   });
 
   /**
+   * Make the whole portfolio tile open the details modal, while keeping the icon link working.
+   */
+  on('click', '.portfolio-wrap', function(e) {
+    const trigger = this.querySelector('.portfolio-details-lightbox');
+    if (!trigger) return;
+
+    if (e.target.closest('.portfolio-details-lightbox')) return;
+
+    e.preventDefault();
+    trigger.click();
+  }, true);
+
+  on('keydown', '.portfolio-wrap', function(e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+
+    const trigger = this.querySelector('.portfolio-details-lightbox');
+    if (!trigger) return;
+
+    e.preventDefault();
+    trigger.click();
+  }, true);
+
+  /**
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
